@@ -16,6 +16,22 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
   },
+
+  {
+    path: "/ParentChild",
+    name: "parentChild",
+    component: () => import("../views/ParentChildCommunication/ParentView.vue"),
+  },
+  {
+    path: "/tableView",
+    name: "tablebViews",
+    component: () => import("../views/Table/TableView.vue"),
+  },
+  {
+    path: "/filterView",
+    name: "FitlerView",
+    component: () => import("../views/FilterView.vue"),
+  },
 ];
 
 const router = createRouter({
